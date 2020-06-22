@@ -45,11 +45,11 @@ body {
 
 form {
   background: #fff;
-  padding: 20 px;
+  /* padding: 20 px;
 
   left: 0;
   bottom: 0;
-  width: 400px;
+  width: 400px; */
 }
 form .field {
   display: grid;

@@ -171,9 +171,9 @@ class AddAnimal extends Component {
 
     return (
       <div className='card col-md-6'>
-        <div className='card-header bg-success text-white'>Add Animal</div>
         <div className='card-body '>
           <form onSubmit={this.onSubmit.bind(this)}>
+            <div className='card-header bg-success text-white'>Add Animal</div>
             <div className='form-group'>
               <label htmlFor='animalName'>Animal Name</label>
               <input
@@ -182,7 +182,7 @@ class AddAnimal extends Component {
                 className={classnames('form-control form-control-lg', {
                   'is-invalid': errors.name,
                 })}
-                placeholder='Please Enter Animal Name'
+                placeholder='Enter Animal Name'
                 value={name}
                 onChange={this.onChange}
               />
@@ -198,7 +198,7 @@ class AddAnimal extends Component {
                   className={classnames('form-control form-control-lg', {
                     'is-invalid': errors.numberOfAnimals,
                   })}
-                  placeholder='Please Enter Number of Animals'
+                  placeholder='Enter Number of Animals'
                   value={numberOfAnimals}
                   onChange={this.onChange}
                 />
@@ -221,7 +221,7 @@ class AddAnimal extends Component {
                     this.setState({ arcID: e.target.value });
                   }}
                 >
-                  <option>Select arc</option>
+                  <option>Select Arc</option>
                   {this.displayArcs()}
                 </select>
 
